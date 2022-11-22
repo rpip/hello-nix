@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "imgapp"
+version = "0.1.0"
+description = ""
+authors = ["Yao <874863+rpip@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "imgapp"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+requests = "^2.28.1"
+pillow = "^9.3.0"
+
+[tool.poetry.scripts]
+imgapp = 'imgapp:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
